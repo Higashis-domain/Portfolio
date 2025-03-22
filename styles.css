@@ -1,0 +1,663 @@
+@font-face {
+    font-family: OliveVillage;
+    src: url(./assets/fonts/OliveVillage-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoiretOne;
+    src: url(./assets/fonts/PoiretOne-Regular.ttf);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background: #FAAD1B;
+}
+
+img::selection, #navbtn::selection {
+    background: none;
+}
+
+.colorPurple>h2::selection, .outlineEffect::selection, .bgPortfolioFont2::selection, .resumeDiv>p::selection {
+    background: #fbe4d8;
+}
+
+.techDivHead::selection, .techDivSubhead::selection, .techDivWeb>p::selection, .techDivSubhead::selection, .actualFloatingthing::selection, .actualFloatingthing2::selection {
+    background: #f1603c;
+}
+
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 4vh 4vh 0 4vh;
+    background-color: #522b5b;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h3 {
+    font-family: "OliveVillage";
+    font-weight: 500;
+    color: #fbe4d8;
+    font-size: 28pt;
+    margin: 0 0 0 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    list-style-type: none;
+    margin: 0px 30px;
+    color: #fbe4d8;
+    font-family: "PoiretOne";
+    font-size: larger;
+    font-weight: bold    ;
+}
+
+#underlineEffect {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    position: relative;
+    padding: .25rem;
+}
+
+#underlineEffect::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fbe4d8;
+    transition: width 0.25s ease-out;
+}
+
+#underlineEffect:hover::before {
+    width: 100%;
+}
+
+#navbtn {
+    color: #522b5b;
+    padding: 8px 20px;
+    border: solid 2px #FAAD1B;
+    background-color: #FAAD1B;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+#navbtn:hover {
+    color: #FAAD1B;
+    background-color: #522b5b;
+    
+}
+
+#navbtn {
+    text-decoration-line: none;
+}
+
+/* firstPage */
+
+#firstPage {
+    position: relative;
+}
+
+.purplebg {
+    background-color: #522b5b;
+    height: 80vh;
+}
+
+.blackbg {
+    background-color: black;
+    height: 20vh;
+    padding-bottom: 5vh;
+}
+
+.bgFontDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontBox {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+.fontBox h1 {
+    font-family: "OliveVillage";
+    font-size: 9rem;
+    color: #fbe4d8;
+    -webkit-text-stroke: 1px #fbe4d8;
+}
+
+.bgPortfolioFont1 {
+    z-index: 2;
+}
+
+.fontBox>.bgPortfolioFont2 {
+    color: transparent;
+    -webkit-text-stroke: 1px #FAAD1B;
+}
+
+#poorabsImage1 {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    width: 50%;
+}
+
+#linksFirstpage {
+    list-style-type: none;
+    background-color: #522b5b;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 50px;
+    margin: 0;
+
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+#linksFirstpage a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #fbe4d8;
+    text-decoration: none;
+}
+
+.star1 {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    height: 50px;
+}
+
+.star2 {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    height: 70px;
+}
+
+.star3 {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    height: 50px;
+}
+
+#description {
+    position: absolute;
+    color: white;
+    font-family: "PoiretOne";
+    font-weight: bold;
+    font-size: 14pt;
+    width: 60%;
+    bottom: 5%;
+    left: -20%;
+}
+
+/* secondPage */
+
+#grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 100vh);
+    grid-template-columns: 10% 40% 40% 10%;
+}
+
+.secondPage {
+    background-color: #fbe4d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#helloDiv h1 {
+    font-family: "OliveVillage";
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+#realDiscription {
+    padding: 0 20px;
+    font-family: "PoiretOne";
+    font-weight: 600;
+    font-size: large;
+}
+
+#secondPageBtn {
+    height: 60px;
+    width: 80%;
+    background-color: #f1603c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 0 40px;
+}
+
+#secondPageBtn img {
+    height: 35px;
+}
+
+#secondPageBtn a {
+    margin-left: 30px;
+    font-family: "PoiretOne";
+    font-size: x-large;
+    font-weight: 600;
+    color: #fbe4d8;
+}
+
+#flexAreaThing1 {
+    grid-area: 1 / 3 / 3 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#flexAreaThing1 .Purple {
+    height: 50%;
+    width: 100%;
+    background-color: #522b5b;
+    position: absolute;
+    bottom: 0;
+}
+
+#floatingContact {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 40%;
+    padding: 0 0 50% 20%;
+}
+
+.floatingPurple {
+    background-color: #522b5b;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.floatingPurple img {
+    height: 150%;
+}
+
+.floatingBlack {
+    background-color: black;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.floatingBlack p {
+    padding-left: 20%;
+    color: #fbe4d8;
+    font-family: "PoiretOne";
+    font-size: 1.5rem;
+}
+
+#floatingContact-contact {
+    font-family: "OliveVillage";
+    font-size: 4rem;
+}
+
+.actualFloatingthing {
+    position: absolute;
+    background-color: #FAAD1B;
+    color: #fbe4d8;
+    padding: 25px 40px;
+    border-radius: 50px;
+    font-family: "PoiretOne";
+    font-weight: 900;
+    font-size: larger;
+    top: 13%;
+    left: 5%;
+}
+
+.actualFloatingthing2 {
+    position: absolute;
+    background-color: #FAAD1B;
+    color: #fbe4d8;
+    padding: 25px 60px;
+    border-radius: 50px;
+    font-family: "PoiretOne";
+    font-weight: 900;
+    font-size: larger;
+    top: 25%;
+    right: -10%;
+}
+
+.resumeDiv {
+    font-family: "OliveVillage";
+    font-size: 9rem;
+    color: transparent;
+    -webkit-text-stroke: 2px #FAAD1B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0 0 20%;
+}
+
+/* thirdPage */
+
+.thirdPage {
+    background-color: #522b5b;
+}
+
+#flexAreaThing2 {
+    grid-area: 2 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.colorPurple, .colorYellow, .colorCream{
+    padding-left: 10%;
+}
+
+.colorPurple {
+    height: 30%;
+}
+
+.colorPurple h2 {
+    color: #FAAD1B;
+    font-family: "OliveVillage";
+    font-weight: 500;
+    font-size: 5rem;
+    padding: 3rem 0;
+}
+
+.eduDiv {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 1rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 60%;
+    width: 100%;
+}
+
+.eduItems1 {
+    color: #fbe4d8;
+    font-family: "OliveVillage";
+    font-size: 2rem;
+}
+
+.eduItems2 {
+    color: #fbe4d8;
+    font-family: "PoiretOne";
+    font-size: large;
+}
+
+#course {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.colorYellow {
+    height: 40%;
+    background-color: #FAAD1B;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr, 1fr, 2fr, 1fr, 2fr;
+}
+
+.techDivHead, .techDivSubhead {
+    display: flex;
+    align-items: center;
+    font-family: "OliveVillage";
+    font-size: 4rem;
+    padding: 2.5rem 0 1.5rem 0;
+}
+
+.techDivSubhead {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.techDivWeb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0 10% 2rem 0;
+    row-gap: 1rem;
+}
+
+.techDivWeb p {
+    font-family: "poiretOne";
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-left: 0.5rem;
+}
+
+.techDivItems {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0 10% 2rem 0;
+}
+
+.techDivItems p {
+    background-color: black;
+    color: #fbe4d8;
+    font-family: "PoiretOne";
+    font-size: medium;
+    font-weight: 600;
+    padding: 20px 40px;
+    border-radius: 50px;
+    height: 1rem;
+}
+
+.colorCream {
+    height: 30%;
+    background-color: #fbe4d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.colorCream div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.activityHead {
+    padding-bottom: 1rem;
+}
+
+.activityDivs div {
+    display: flex;
+    flex-direction: column;
+}
+
+.activityDivsType1 {
+    font-family: "OliveVillage";
+    font-size: 2rem;
+}
+
+.activityDivsType2 {
+    font-family: "PoiretOne";
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.colorCream img {
+    height: 50px;
+    padding-right: 20px;
+}
+
+/* forthPage */
+
+.forthPage {
+    background-color: #fbe4d8;
+}
+
+.forthPageStuff {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-template-columns: 100%;
+    padding: 0 10% 10% 10%;
+}
+
+.forthPageStuffHead {
+    font-family: "OliveVillage";
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.langItems {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.langItems p {
+    font-family: "OliveVillage";
+    font-size: xx-large;
+}
+
+#smallPForthPage {
+    font-family: "PoiretOne";
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.hobbieItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.hobbieItems div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hobbieItems img {
+    height: 70px;
+}
+
+/* fifthPage */
+
+.fifthPage {
+    background-color: black;
+    grid-area: 4 / 1 / 5 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerh1 {
+    font-family: "OliveVillage";
+    color: #fbe4d8;
+    font-size: 8rem;
+    -webkit-text-stroke: 1px #fbe4d8;
+}
+
+.unique {
+    position: relative;
+}
+
+.unique img {
+    height: 50px;
+}
+
+#footerStar1 {
+    position: absolute;
+    left: -2rem;
+    top: -3rem;
+}
+
+#footerStar2 {
+    position: absolute;
+    height: 40px;
+    left: -4rem;
+    top: 0;
+}
+
+#footerStar3 {
+    position: absolute;
+    right: -3rem;
+    bottom: -1rem;
+}
+
+.outlineEffect {
+    color: transparent;
+    -webkit-text-stroke: 1px #FAAD1B;
+}
+
+.footerLinks {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7rem;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    font-family: "PoiretOne";
+    color: #fbe4d8;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.footerLinks a:hover {
+    color: #f1603c;
+}
+
