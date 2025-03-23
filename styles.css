@@ -39,8 +39,8 @@ body {
 }
 
 html, body {
-    min-width: 1024px;
-    min-height: 768px;
+    min-width: 1280px;
+    min-height: 720px;
 }
 
 /* header */
