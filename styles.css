@@ -32,15 +32,12 @@ img::selection, #navbtn::selection {
 html {
     scrollbar-width: none;
     scroll-behavior: smooth;
+    min-width: 1280px;
+    min-height: 720px;
 }
 
 body {
     margin: 0;
-}
-
-html, body {
-    min-width: 1280px;
-    min-height: 720px;
 }
 
 /* header */
@@ -114,6 +111,7 @@ header li {
     border: solid 2px #FAAD1B;
     background-color: #FAAD1B;
     border-radius: 30px;
+    text-decoration-line: none;
     transition: 0.2s;
 }
 
@@ -121,10 +119,6 @@ header li {
     color: #FAAD1B;
     background-color: #522b5b;
     
-}
-
-#navbtn {
-    text-decoration-line: none;
 }
 
 /* firstPage */
