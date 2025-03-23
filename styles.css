@@ -38,6 +38,11 @@ body {
     margin: 0;
 }
 
+html, body {
+    min-width: 1024px;
+    min-height: 768px;
+}
+
 /* header */
 
 header {
