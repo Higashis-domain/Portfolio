@@ -239,7 +239,7 @@ header li {
 
 #grid-container {
     display: grid;
-    grid-template-rows: repeat(4, 120vh);
+    grid-template-rows: repeat(4, 100vh);
     grid-template-columns: 10% 40% 40% 10%;
 }
 
